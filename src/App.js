@@ -1,8 +1,8 @@
 import React from "react";
-import Header from './components/header'
 import './App.css'
 import { createGlobalStyle } from 'styled-components'
 import AppRoutes from "./pages/routes";
+import roboto from '../src/assets/fonts/Roboto-Medium.ttf'
 
 
 
@@ -28,8 +28,8 @@ const GlobalStyle = createGlobalStyle`
   padding:0;
   list-style-type: none;
   text-decoration: none;
-  font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: black;
+  
 }
 
 html{

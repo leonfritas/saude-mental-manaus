@@ -14,6 +14,9 @@ export default function Contato(){
 const Main = styled.main`
 
 height: 100vh;
-
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #008b8b;
 
 `

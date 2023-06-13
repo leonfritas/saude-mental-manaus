@@ -1,38 +1,27 @@
 import styled from 'styled-components'
-import ImgSobre from '../assets/images/image4.jpg'
+import ImgSobre from '../assets/images/fotolincoln.png'
+import './sobre.css'
 
 
 export default function Sobre(){
     return(
         <Main id='sobre'> 
-            <SectionSobre>
+            <SectionSobre className='sectionSobre'>
 
-                {/* <DivConteudoSobre>
-                    <h2>Como funciona a consulta com o especialista?</h2>
+                   <DivConteudo>
+                        <DivTexto>
+                            <H2>Um pouco sobre mim</H2>
 
-                    <p>
-                        Bem-vindo à sua jornada de autodescoberta e crescimento pessoal! Em uma consulta com um psicólogo, você encontrará um espaço acolhedor e seguro, onde suas preocupações e emoções serão ouvidas com profunda empatia. Com cuidado e respeito, o psicólogo irá guiá-lo rumo à clareza e bem-estar emocional.
-                    </p>
-                    
-                    <p>
-                        Lembre-se, a consulta com o psicólogo não apenas trará alívio para o seu sofrimento, mas também abrirá as portas para uma vida mais plena, significativa e gratificante. Embarque nesta jornada de autotransformação e redescubra o poder dentro de você com o apoio de um psicólogo atencioso e experiente.
-                    </p>
-                </DivConteudoSobre> */}
-                <DivConteudoSobre>
-                    <DivTexto>
-                        <h2>Como funciona a consulta com o especialista?</h2>
-
-                        <P>
-                            Bem-vindo à sua jornada de autodescoberta e crescimento pessoal! Em uma consulta com um psicólogo, você encontrará um espaço acolhedor e seguro, onde suas preocupações e emoções serão ouvidas com profunda empatia. Com cuidado e respeito, o psicólogo irá guiá-lo rumo à clareza e bem-estar emocional.
-                        </P>
-                        <P2>
-                        Lembre-se, a consulta com o psicólogo não apenas trará alívio para o seu sofrimento, mas também abrirá as portas para uma vida mais plena, significativa e gratificante.
-                        </P2>
-                    </DivTexto>
-                    
-                    <Img src= {ImgSobre}  ></Img>
-
-                </DivConteudoSobre>
+                            <P2>
+                                Com uma trajetória de 8 anos dedicados à prática da psicologia, tenho auxiliado indivíduos a superarem desafios, conquistarem autoconhecimento e desenvolverem habilidades para uma vida mais satisfatória.
+                            </P2>
+                            <P2>
+                                Minha abordagem é baseada em uma perspectiva humanista e integrativa, adaptando as técnicas terapêuticas de acordo com as necessidades e preferências de cada cliente.
+                            </P2>
+                        </DivTexto>
+                        
+                        <Img src= {ImgSobre}  ></Img>
+                    </DivConteudo>
 
 
             </SectionSobre>
@@ -48,18 +37,31 @@ justify-content: center;
 align-items: center;
 padding-top: 50px;
 
+`
 
+const DivConteudo = styled.div`
+display: flex;
+background-color: #f5f5f5;
+border-radius: 30px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;`
 
+const DivImg = styled.div`
+width: 500px;
 
+border-radius: 10px;
 `
 
 const SectionSobre = styled.section`
-
-width: 100%;
+width: 90%;
+height: 90%;
+border-radius: 30px;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
 
 `
 
@@ -72,23 +74,31 @@ gap: 50px;
 position: relative;`
 
 const Img = styled.img`
+width: 500px;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
 `
 const DivTexto = styled.h2`
-position: absolute;
+
 width: 500px;
 color: white;
-margin: 100px;
-top:0;
-bottom: 0;
 display: flex;
 flex-direction: column;
-gap: 100px
+gap: 50px;
+padding: 50px;
+
 `
 
 const P = styled.p`
 
-text-align: justify;`
+text-align: justify;
+font-weight: 300;
+color: black;`
 
 const P2 = styled.p`
 
-`
+text-align: justify;
+color: black;`
+
+const H2 = styled.h2`
+color: black;`
