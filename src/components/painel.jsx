@@ -12,7 +12,7 @@ export default function Painel(){
             <DivContainer className='divContainer'>
                 <DivConteudo>
                     <H2Titulo>
-                        Bem vindo (a) ao Saúde Mental Manaus Teste 2
+                        Bem vindo (a) ao Saúde Mental Manaus Teste 3
                     </H2Titulo>
                 </DivConteudo>
                 
